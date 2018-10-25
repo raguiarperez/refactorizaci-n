@@ -1,4 +1,3 @@
-
 package boletin4_3;
 
 /**
@@ -6,7 +5,7 @@ package boletin4_3;
  * @author rafa
  */
 public class Circulo {
-    
+
     private double radio;
     final double PI = 3.14;
 

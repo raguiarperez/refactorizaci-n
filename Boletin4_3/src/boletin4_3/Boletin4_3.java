@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package boletin4_3;
 
-/**
- *
- * @author rafa
- */
+ // @author rafa
+ 
 public class Boletin4_3 {
 
     public static void main(String[] args) {
@@ -17,5 +11,5 @@ public class Boletin4_3 {
         System.out.println("longitud de circulo2: " + circu2.calcLongitud());
         System.out.println("area de circulo2: " + circu2.calcularArea());
     }
-    
+
 }
