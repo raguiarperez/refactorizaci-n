@@ -6,25 +6,25 @@ package boletin4_4;
  */
 public class Restaurante {
 
-    private float potatoes;
+    private float patatiñas;
     private float pulpiño;
 
     public Restaurante() {
-        potatoes = 0f;
+        patatiñas = 0f;
         pulpiño = 0f;
     }
 
     public Restaurante(float pata, float pulp) {
-        potatoes = pata;
+        patatiñas = pata;
         pulpiño = pulp;
     }
 
-    public float getPotatoes() {
-        return potatoes;
+    public float getPatatiñas() {
+        return patatiñas;
     }
 
-    public void setPotatoes(float set) {
-        potatoes = set;
+    public void setPatatiñas(float set) {
+        patatiñas = set;
     }
 
     public float getPulpiño() {
@@ -37,7 +37,7 @@ public class Restaurante {
 
     public int calcCapacidad() {
         int cap1 = (int) (pulpiño / 2 * 3);
-        int cap2 = (int) (potatoes * 3);
+        int cap2 = (int) (patatiñas * 3);
         if (cap1 > cap2) {
             return cap2;
         } else {
