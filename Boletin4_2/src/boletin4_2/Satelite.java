@@ -1,26 +1,23 @@
-
 package boletin4_2;
 
 public class Satelite {
-    
-    private double meridiano;
+
+    private double meridian;
     private double paralelo;
-    private double distanciaTerra;
+    private double distanceEarth;
 
     public Satelite() {
-        meridiano = paralelo = distanciaTerra = 0;
+        meridian = paralelo = distanceEarth = 0;
     }
 
     public Satelite(double m, double p, double d) {
 
-        meridiano = m;
+        meridian = m;
         paralelo = p;
-        distanciaTerra = d;
+        distanceEarth = d;
     }
 
     public void verPosicion() {
-        System.out.println(" El satelite se encuentra  en paralelo " + paralelo + " meridiano " + meridiano + " y a una distancia de la tierra de " + distanciaTerra);
+        System.out.println(" El satelite se encuentra  en paralelo " + paralelo + " meridiano " + meridian + " y a una distancia de la tierra de " + distanceEarth);
     }
 }
-
-
