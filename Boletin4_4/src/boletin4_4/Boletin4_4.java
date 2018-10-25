@@ -1,4 +1,3 @@
-
 package boletin4_4;
 
 import java.util.Scanner;
@@ -24,5 +23,5 @@ public class Boletin4_4 {
         System.out.println("la capacidad es de : " + rest1.calcCapacidad() + " personas");
 
     }
-    
+
 }

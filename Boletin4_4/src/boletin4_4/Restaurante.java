@@ -1,4 +1,3 @@
-
 package boletin4_4;
 
 /**
@@ -6,39 +5,39 @@ package boletin4_4;
  * @author rafa
  */
 public class Restaurante {
-    
-    private float patatas;
-    private float pulpo;
+
+    private float potatoes;
+    private float pulpiño;
 
     public Restaurante() {
-        patatas = 0f;
-        pulpo = 0f;
+        potatoes = 0f;
+        pulpiño = 0f;
     }
 
     public Restaurante(float pata, float pulp) {
-        patatas = pata;
-        pulpo = pulp;
+        potatoes = pata;
+        pulpiño = pulp;
     }
 
-    public float getPatatas() {
-        return patatas;
+    public float getPotatoes() {
+        return potatoes;
     }
 
-    public void setPatatas(float set) {
-        patatas = set;
+    public void setPotatoes(float set) {
+        potatoes = set;
     }
 
-    public float getPulpo() {
-        return pulpo;
+    public float getPulpiño() {
+        return pulpiño;
     }
 
-    public void setPulpo(float set) {
-        pulpo = set;
+    public void setPulpiño(float set) {
+        pulpiño = set;
     }
 
     public int calcCapacidad() {
-        int cap1 = (int) (pulpo / 2 * 3);
-        int cap2 = (int) (patatas * 3);
+        int cap1 = (int) (pulpiño / 2 * 3);
+        int cap2 = (int) (potatoes * 3);
         if (cap1 > cap2) {
             return cap2;
         } else {
