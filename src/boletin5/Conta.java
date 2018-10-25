@@ -1,26 +1,27 @@
-
 package boletin5;
- //autor : @raguiarperez
+//autor : @raguiarperez
+
 public class Conta {
-    private String name;
+
+    private String nombre;
     private String iban;
-    private Double accountBalance;
+    private Double Balance;
 
     public Conta() {
     }
 
     public Conta(String name, String iban, Double accountBalance) {
-        this.name = name;
+        this.nombre = name;
         this.iban = iban;
-        this.accountBalance = accountBalance;
+        this.Balance = accountBalance;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getIban() {
@@ -31,47 +32,46 @@ public class Conta {
         this.iban = iban;
     }
 
-    public Double getAccountBalance() {
-        return accountBalance;
+    public Double getBalance() {
+        return Balance;
     }
 
-    public void setAccountBalance(Double accountBalance) {
-        this.accountBalance = accountBalance;
+    public void setBalance(Double Balance) {
+        this.Balance = Balance;
     }
-    
-    public boolean deposit(Double cantEuros){
-    boolean ok = false;
-    if(cantEuros >= 0){
-        accountBalance += cantEuros;
-        ok = true;
-       }
-    return ok;
+
+    public boolean deposit(Double cantEuros) {
+        boolean ok = false;
+        if (cantEuros >= 0) {
+            Balance += cantEuros;
+            ok = true;
+        }
+        return ok;
     }
-    
-    public boolean refound(Double cantEuros){
-    boolean ok = false;
-        if(cantEuros <= accountBalance && cantEuros > 0){
-    accountBalance -= cantEuros;
-    ok = true;
+
+    public boolean refound(Double cantEuros) {
+        boolean ok = false;
+        if (cantEuros <= Balance && cantEuros > 0) {
+            Balance -= cantEuros;
+            ok = true;
+        }
+        return ok;
     }
-    return ok;
+
+    public void transfer(Conta bankAccount, Double importe) {
+        if (this.refound(importe)) {
+
+            bankAccount.deposit(importe);
+
+        }
     }
-    
-    public void transfer(Conta bankAccount,Double importe){
-        if(this.refound(importe)){
-        
-        bankAccount.deposit(importe);
-        
-        
-        
-        }}
-    
-        public void show(){
+
+    public void show() {
         System.out.println("----------------------------------------------------------------");
-        System.out.println("Titular de la cuenta : "+ this.getName());
+        System.out.println("Titular de la cuenta : " + this.getNombre());
         System.out.println("Numero de cuenta     : " + this.getIban());
-        System.out.println("Saldo de la cuenta   : "+ this.getAccountBalance());
+        System.out.println("Saldo de la cuenta   : " + this.getBalance());
         System.out.println("----------------------------------------------------------------\n");
     }
-    
+
 }
