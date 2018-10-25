@@ -1,25 +1,22 @@
-
 package boletin4_1;
 
 public class coche {
-    
-    private int velocidade;
+
+    private int velocidad;
 
     public coche() {
-        velocidade = 0;
+        velocidad = 0;
     }
 
-    public int getVelocidade() { //devuelve la velocidade actual
-        return velocidade;
+    public int getVelocidad() { //devuelve la velocidade actual
+        return velocidad;
     }
 
     public void acelerar(int valor) {// .Este mÃ©todo incrementa a velocidade na cantidade valor
-        velocidade += valor;
+        velocidad += valor;
     }
 
     public void frenar(int menos) {//.Este mÃ©todo diminue a velocidade na cantidade menos.
-        velocidade -= menos;
+        velocidad -= menos;
     }
 }
-
-
